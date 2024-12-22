@@ -1,0 +1,40 @@
+# ecommerce-db-queries
+
+## Descrição
+
+Este projeto foi desenvolvido como parte de um desafio de modelagem e implementação de banco de dados para um cenário de e-commerce. O objetivo principal é criar um esquema lógico para gerenciar informações relacionadas a clientes, pedidos, produtos, fornecedores, pagamentos e entregas. Além disso, o projeto inclui consultas SQL que respondem a perguntas importantes para análise e gestão dos dados do negócio.
+
+## Estrutura do Projeto
+
+### Tabelas Criadas
+
+1. **clientes**: Contém informações sobre os clientes, diferenciando entre Pessoa Física (PF) e Pessoa Jurídica (PJ).
+2. **fornecedores**: Armazena os dados dos fornecedores de produtos.
+3. **produtos**: Inclui os produtos disponíveis no estoque, seus preços e os fornecedores associados.
+4. **pedidos**: Registra as informações sobre os pedidos realizados pelos clientes.
+5. **pagamentos**: Detalha as formas de pagamento usadas nos pedidos.
+6. **entregas**: Gerencia o status das entregas e os códigos de rastreamento.
+
+### Regras Implementadas
+- Cada cliente pode ser do tipo PF ou PJ, mas não ambos.
+- Produtos estão associados a fornecedores.
+- Pagamentos e entregas estão vinculados diretamente aos pedidos.
+
+## Consultas Implementadas
+
+- **Quantos pedidos foram feitos por cada cliente?**
+  Consulta que retorna o número de pedidos realizados por cada cliente.
+
+- **Produtos, fornecedores e estoque:**
+  Consulta que lista os produtos disponíveis, seus fornecedores e as respectivas quantidades em estoque.
+
+- **Algum fornecedor também é vendedor?**
+  (Consulta para ser implementada caso exista uma tabela de vendedores.)
+
+## Ferramentas Utilizadas
+- MySQL Workbench
+- DBeaver (opcional para visualização)
+- GitHub para versionamento
+
+## Objetivo
+Este projeto visa consolidar os conhecimentos em modelagem de banco de dados e SQL, além de criar uma base que possa ser expandida para futuros sistemas de e-commerce.
